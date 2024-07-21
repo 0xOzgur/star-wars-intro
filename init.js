@@ -16,3 +16,28 @@ function randomPosition() {
     var randomY = Math.floor(Math.random() * y)
     return [randomX, randomY]
 }
+
+
+// Sayfa tamamen yüklendiğinde çalışacak fonksiyon
+document.addEventListener('DOMContentLoaded', function() {
+    showModal();
+});
+
+function showModal() {
+    // Modalı göster
+    document.getElementById('musicModal').style.display = 'block';
+}
+
+function playMusic() {
+    // Müziği oynat
+    var audio = document.querySelector('audio');
+    if (audio) {
+        audio.play();
+    }
+    closeModal();
+}
+
+function closeModal() {
+    // Modalı kapat
+    document.getElementById('musicModal').style.display = 'none';
+}

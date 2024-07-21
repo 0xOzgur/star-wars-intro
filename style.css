@@ -26,7 +26,7 @@ body::after {
 	position: absolute;
 	width: 1px;
 	height: 1px;
-	background-color: #fff;
+	background-color: #911c1c;
 	z-index: 2;
 }
 
@@ -40,6 +40,21 @@ body::after {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 500;
 	font-size: 3.25rem;
+	width: 80%;
+	opacity: 0;
+	animation: intro 6s ease-out 0.5s;
+}
+
+.click {
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	color: rgb(75, 213, 238);
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	font-size: 1.0rem;
 	width: 80%;
 	opacity: 0;
 	animation: intro 6s ease-out 0.5s;
@@ -90,7 +105,7 @@ body::after {
 }
 
 p {
-	color: #ffe81f;
+	color: #D32727;
 }
 
 #scroller {
